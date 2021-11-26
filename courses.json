@@ -1,0 +1,40 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "course_name": "xyacvsjdfbv",
+      "course_fee": 1668,
+      "course_image": "https://www.sharda.ac.in/blog/wp-content/uploads/2020/03/Image-1.jpg",
+      "duration": "Heath Halpine",
+      "criteria": "Sidonnie Provost",
+      "batch_id": 85
+    },
+    {
+      "id": 2,
+      "course_name": "Giavani Birdsey",
+      "course_fee": 1906,
+      "course_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNFwmhi-yjIJ6lFACMmPPPwtOR0BPy9WX0xDFDVU1b4i_uLPCI2NGkJtmAwc7t9I85pmo&usqp=CAU",
+      "duration": "Ferrel Atmore",
+      "criteria": "Talya Burner",
+      "batch_id": 41
+    },
+    {
+      "id": 3,
+      "course_name": "Elyssa Hirschmann",
+      "course_fee": 2317,
+      "course_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8cPbhRnfAwKHCXF4LVzyoc-Lgd-tYklguRXF267txs78rSGnuH1kP6JTMjQLgmIuRATE&usqp=CAU",
+      "duration": "Cassie Fillary",
+      "criteria": "Geneva Raithmill",
+      "batch_id": 22
+    },
+    {
+      "id": 4,
+      "course_name": "Bronnie Shackleford",
+      "course_fee": 2765,
+      "course_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJZay7KjI0kqs0SAtAReKI741YgAorhc6jezr_tmSK1XrzQrfuhrEHWGDeoyDeWXdN0YI&usqp=CAU",
+      "duration": "Robinetta Maslen",
+      "criteria": "Ekaterina Moorey",
+      "batch_id": 57
+    }
+  ]
+}

@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 
 import Login from './Login'
-
+import CourseList from "./CourseList";
+import CourseEdit from "./CourseEdit";
 import './Main.css'
+import CourseDetails from "./CourseDetails";
 
 /*import  Main  from './Main'
 import  Header from './Header'
@@ -36,13 +38,16 @@ function MyRouter() {
     <Router>
       <div id="nav">
         <div id="link" style={div}><Link  style={{ textDecoration: "none", color: 'black' }} to="/login">Login</Link></div>
+        <div id ="link" style={div}><Link style={{textDecoration:"none",color:'black'}} to="/courselist">Course List</Link></div>
         
       </div>
       <Routes>
         
         
         <Route path="/login" element={<Login />} />
-        
+        <Route path="/courselist" element={<CourseList/>}/>
+        <Route path="/coursedetails/:id" element={<CourseDetails/>}/>
+        <Route path="/courseedit/:id" element={<CourseEdit/>}/>
       </Routes>
 
     </Router>
