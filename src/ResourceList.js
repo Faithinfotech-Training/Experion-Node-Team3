@@ -6,6 +6,9 @@ import './Resource.css'
 
 
 function ResourceList(){
+    if(!localStorage.getItem('mytoken')){
+        window.location = '/login'
+    }
     //initialize the use case to empty
     const [resouces,setResouces] = useState([])
     useEffect(()=>{

@@ -6,6 +6,9 @@ import './Staff.css'
 
 
 function CourseList(){
+    if(!localStorage.getItem('mytoken')){
+         window.location = '/login'
+    }
     //initialize the use case to empty
     const [staffs,setStaffs] = useState([])
     useEffect(()=>{

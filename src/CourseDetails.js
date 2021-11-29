@@ -6,6 +6,9 @@ import axios from "axios";
 
 
 function CourseDetails(){
+    if(!localStorage.getItem('mytoken')){
+        window.location = '/login'
+    }
     const [course,setcourse] = useState([])
     const {id} = useParams()
     const navigate = useNavigate()

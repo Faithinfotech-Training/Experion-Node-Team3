@@ -6,6 +6,9 @@ import axios from "axios";
 
 
 function ResourceDetails(){
+    if(!localStorage.getItem('mytoken')){
+        window.location = '/login'
+    } 
     const [resource,setResource] = useState([])
     const {id} = useParams()
     const navigate = useNavigate()

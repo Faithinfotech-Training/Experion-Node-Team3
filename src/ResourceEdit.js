@@ -3,6 +3,9 @@ import './Main.css'
 import axios from 'axios'
 import { useParams } from "react-router-dom";
 function ResourceEdit() {
+    if(!localStorage.getItem('mytoken')){
+        window.location = '/login'
+    }
     const {id} =useParams()
     return (<div>
 

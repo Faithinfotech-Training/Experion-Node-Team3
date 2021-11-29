@@ -5,6 +5,9 @@ import axios from "axios";
 
 
 function ResourceDelete(){
+    if(!localStorage.getItem('mytoken')){
+        window.location = '/login'
+    }
     const [staff,setStaff] = useState([])
     const {id} = useParams()
 

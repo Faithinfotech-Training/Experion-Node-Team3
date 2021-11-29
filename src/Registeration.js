@@ -2,10 +2,10 @@ import { useState } from "react";
 import './Main.css'
 import axios from 'axios'
 
-function Login() {
-    localStorage.clear();
+function Registeration() {
+    
     return (<div>
-        <h1>Please Login</h1>
+        <h1>Please Register</h1>
         <MyForm />
 
 
@@ -33,9 +33,9 @@ function MyForm(props) {
             .post(`http://localhost:3005/login`, inputs)
             .then(response => {
                 
-                console.log(response.data.accessToken);
+                console.log(response);
                 localStorage.setItem('mytoken',response.data.accessToken)
-                window.location ='/ResourceList'
+                //window.location('')
             })
             .catch(error => {
                 localStorage.clear();
@@ -52,19 +52,23 @@ function MyForm(props) {
         <form onSubmit={handleSubmit}>
             <div>
                 <label>Email:</label>
-                <input style={{ marginLeft: 83 }} type="email" name="email" value={inputs.email || ""} onChange={handleChange} required />
+                <input style={{ marginLeft: 22 }} type="email" name="email" value={inputs.email || ""} onChange={handleChange} required />
+            </div>
+            <div>
+                <label>Name:</label>
+                <input  style={{ marginLeft: 22 }} type="text" name="name" value={inputs.name || ""} onChange={handleChange} required />
             </div>
             <div>
                 <label>Password:</label>
-                <input style={{ marginLeft: 60 }} type="password" name="password" value={inputs.password || ""} onChange={handleChange} required />
+                <input  type="password" name="password" value={inputs.password || ""} onChange={handleChange} required />
             </div>
             <div>
                 <label>Role:</label>
-                <input style={{ marginLeft: 90 }} type="text" name="role" value={inputs.role || ""} onChange={handleChange} required />
+                <input style={{ marginLeft: 30 }}  type="text" name="role" value={inputs.role || ""} onChange={handleChange} required />
             </div>
             <button type="submit" >Login</button>
         </form>
     </div>);
 }
 
-export default Login;
+export default Registeration;
